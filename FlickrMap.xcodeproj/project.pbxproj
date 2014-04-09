@@ -31,6 +31,7 @@
 		9A58BA0418DA08B50008974D /* boobs3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A58B9FE18DA08B50008974D /* boobs3.jpg */; };
 		9A58BA0518DA08B50008974D /* boobs2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A58B9FF18DA08B50008974D /* boobs2.jpg */; };
 		9A58BA0618DA08B50008974D /* boobs1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A58BA0018DA08B50008974D /* boobs1.jpg */; };
+		9A58BA0918F59C0C0008974D /* FlickRPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A58BA0818F59C0C0008974D /* FlickRPicture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		9A58B9FE18DA08B50008974D /* boobs3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boobs3.jpg; sourceTree = "<group>"; };
 		9A58B9FF18DA08B50008974D /* boobs2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boobs2.jpg; sourceTree = "<group>"; };
 		9A58BA0018DA08B50008974D /* boobs1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boobs1.jpg; sourceTree = "<group>"; };
+		9A58BA0718F59C0C0008974D /* FlickRPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickRPicture.h; sourceTree = "<group>"; };
+		9A58BA0818F59C0C0008974D /* FlickRPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickRPicture.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,8 @@
 				9A58B9F518DA00CE0008974D /* PictureViewController.m */,
 				9A58B9F718DA00F90008974D /* ReaderView.h */,
 				9A58B9F818DA00F90008974D /* ReaderView.m */,
+				9A58BA0718F59C0C0008974D /* FlickRPicture.h */,
+				9A58BA0818F59C0C0008974D /* FlickRPicture.m */,
 			);
 			path = FlickrMap;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 				9A58B9D018D9F8270008974D /* AppDelegate.m in Sources */,
 				9A58B9F618DA00CE0008974D /* PictureViewController.m in Sources */,
 				9A58B9D318D9F8270008974D /* FlickrMap.xcdatamodeld in Sources */,
+				9A58BA0918F59C0C0008974D /* FlickRPicture.m in Sources */,
 				9A58B9F918DA00F90008974D /* ReaderView.m in Sources */,
 				9A58B9CC18D9F8270008974D /* main.m in Sources */,
 			);
