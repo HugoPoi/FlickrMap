@@ -22,6 +22,15 @@
 		9A58B9DF18D9F8270008974D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A58B9C318D9F8270008974D /* CoreData.framework */; };
 		9A58B9E718D9F8270008974D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A58B9E518D9F8270008974D /* InfoPlist.strings */; };
 		9A58B9E918D9F8270008974D /* FlickrMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A58B9E818D9F8270008974D /* FlickrMapTests.m */; };
+		9A58B9F318D9F8EB0008974D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A58B9F218D9F8EB0008974D /* Storyboard.storyboard */; };
+		9A58B9F618DA00CE0008974D /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A58B9F518DA00CE0008974D /* PictureViewController.m */; };
+		9A58B9F918DA00F90008974D /* ReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A58B9F818DA00F90008974D /* ReaderView.m */; };
+		9A58BA0118DA08B50008974D /* boobs0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A58B9FB18DA08B50008974D /* boobs0.jpg */; };
+		9A58BA0218DA08B50008974D /* boobs5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A58B9FC18DA08B50008974D /* boobs5.jpg */; };
+		9A58BA0318DA08B50008974D /* boobs4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A58B9FD18DA08B50008974D /* boobs4.jpg */; };
+		9A58BA0418DA08B50008974D /* boobs3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A58B9FE18DA08B50008974D /* boobs3.jpg */; };
+		9A58BA0518DA08B50008974D /* boobs2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A58B9FF18DA08B50008974D /* boobs2.jpg */; };
+		9A58BA0618DA08B50008974D /* boobs1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A58BA0018DA08B50008974D /* boobs1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,17 @@
 		9A58B9E418D9F8270008974D /* FlickrMapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlickrMapTests-Info.plist"; sourceTree = "<group>"; };
 		9A58B9E618D9F8270008974D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9A58B9E818D9F8270008974D /* FlickrMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickrMapTests.m; sourceTree = "<group>"; };
+		9A58B9F218D9F8EB0008974D /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		9A58B9F418DA00CE0008974D /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
+		9A58B9F518DA00CE0008974D /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
+		9A58B9F718DA00F90008974D /* ReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderView.h; sourceTree = "<group>"; };
+		9A58B9F818DA00F90008974D /* ReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderView.m; sourceTree = "<group>"; };
+		9A58B9FB18DA08B50008974D /* boobs0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boobs0.jpg; sourceTree = "<group>"; };
+		9A58B9FC18DA08B50008974D /* boobs5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boobs5.jpg; sourceTree = "<group>"; };
+		9A58B9FD18DA08B50008974D /* boobs4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boobs4.jpg; sourceTree = "<group>"; };
+		9A58B9FE18DA08B50008974D /* boobs3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boobs3.jpg; sourceTree = "<group>"; };
+		9A58B9FF18DA08B50008974D /* boobs2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boobs2.jpg; sourceTree = "<group>"; };
+		9A58BA0018DA08B50008974D /* boobs1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boobs1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +135,17 @@
 		9A58B9C518D9F8270008974D /* FlickrMap */ = {
 			isa = PBXGroup;
 			children = (
+				9A58B9FA18DA088C0008974D /* boobs */,
 				9A58B9CE18D9F8270008974D /* AppDelegate.h */,
 				9A58B9CF18D9F8270008974D /* AppDelegate.m */,
 				9A58B9D418D9F8270008974D /* Images.xcassets */,
 				9A58B9D118D9F8270008974D /* FlickrMap.xcdatamodeld */,
 				9A58B9C618D9F8270008974D /* Supporting Files */,
+				9A58B9F218D9F8EB0008974D /* Storyboard.storyboard */,
+				9A58B9F418DA00CE0008974D /* PictureViewController.h */,
+				9A58B9F518DA00CE0008974D /* PictureViewController.m */,
+				9A58B9F718DA00F90008974D /* ReaderView.h */,
+				9A58B9F818DA00F90008974D /* ReaderView.m */,
 			);
 			path = FlickrMap;
 			sourceTree = "<group>";
@@ -151,6 +177,19 @@
 				9A58B9E518D9F8270008974D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A58B9FA18DA088C0008974D /* boobs */ = {
+			isa = PBXGroup;
+			children = (
+				9A58B9FB18DA08B50008974D /* boobs0.jpg */,
+				9A58B9FC18DA08B50008974D /* boobs5.jpg */,
+				9A58B9FD18DA08B50008974D /* boobs4.jpg */,
+				9A58B9FE18DA08B50008974D /* boobs3.jpg */,
+				9A58B9FF18DA08B50008974D /* boobs2.jpg */,
+				9A58BA0018DA08B50008974D /* boobs1.jpg */,
+			);
+			name = boobs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +268,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A58B9CA18D9F8270008974D /* InfoPlist.strings in Resources */,
+				9A58BA0418DA08B50008974D /* boobs3.jpg in Resources */,
+				9A58BA0218DA08B50008974D /* boobs5.jpg in Resources */,
+				9A58BA0318DA08B50008974D /* boobs4.jpg in Resources */,
 				9A58B9D518D9F8270008974D /* Images.xcassets in Resources */,
+				9A58BA0618DA08B50008974D /* boobs1.jpg in Resources */,
+				9A58BA0118DA08B50008974D /* boobs0.jpg in Resources */,
+				9A58BA0518DA08B50008974D /* boobs2.jpg in Resources */,
+				9A58B9F318D9F8EB0008974D /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +295,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A58B9D018D9F8270008974D /* AppDelegate.m in Sources */,
+				9A58B9F618DA00CE0008974D /* PictureViewController.m in Sources */,
 				9A58B9D318D9F8270008974D /* FlickrMap.xcdatamodeld in Sources */,
+				9A58B9F918DA00F90008974D /* ReaderView.m in Sources */,
 				9A58B9CC18D9F8270008974D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
