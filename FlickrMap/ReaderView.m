@@ -50,6 +50,7 @@
 
 -(void)displayPageAtIndex:(int)index
 {
+    NSLog(@"Display page ReaderView");
     if(index >= 0 && index < [self.delegate numberOfPages]){
         if(self.subviews.count){
             [self.subviews.lastObject removeFromSuperview];

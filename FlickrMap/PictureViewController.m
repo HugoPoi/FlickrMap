@@ -12,6 +12,7 @@
 @interface PictureViewController () <ReaderViewDelegate>
 
 @property (weak, nonatomic) IBOutlet ReaderView *readerView;
+@property (strong, nonatomic) NSArray* pictures;
 
 @end
 
@@ -30,24 +31,61 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.readerView.delegate = self;
+    
+    FlickRLocation location;
+    location.latitude = 48.845726;
+    location.longitude = 2.385017;
+    location.radius = 1;
+    UIActivityIndicatorView * indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    indicator.backgroundColor = [UIColor blackColor];
+    indicator.center = self.view.center;
+    [self.view addSubview:indicator];
+    [indicator startAnimating];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void){
+        self.pictures = [FlickRPicture pictureAroundLocation:location];
+        dispatch_async(dispatch_get_main_queue(), ^(void){
+            self.readerView.delegate = self;
+            [self.readerView displayPageAtIndex:0];
+            [indicator stopAnimating];
+        });
+    });
+    
+    
+    //self.readerView.delegate = self;
 }
 - (UIView *)pageAtIndex:(int)index{
-    NSString * imageName = [NSString stringWithFormat:@"boobs%i.jpg",index];
-    UIImage * image = [UIImage imageNamed:imageName];
-    UIImageView * imageView = [[UIImageView alloc] initWithImage:image];
+    
+    UIImageView * imageView = [[UIImageView alloc] init];
     imageView.frame = self.readerView.bounds;
     imageView.contentMode = UIViewContentModeScaleAspectFit;
+    self.title = @"Chargement ...";
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^(void){
+        
+        FlickRPicture * picture = self.pictures[index];
+        //NSLog(picture.url);
+        NSData * imageData = [NSData dataWithContentsOfURL:picture.url];
+        
+        dispatch_async(dispatch_get_main_queue(), ^(void){
+            UIImage * image = [UIImage imageWithData:imageData];
+            imageView.image = image;
+            self.title = picture.title;
+            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        });
+    });
+    
     return imageView;
 }
 - (int) numberOfPages{
-    return 6;
+    return self.pictures.count;
 }
 
 -(void) viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self.readerView displayPageAtIndex:0];
+    //[self.readerView displayPageAtIndex:0];
 }
 
 - (void)didReceiveMemoryWarning

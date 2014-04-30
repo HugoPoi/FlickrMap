@@ -7,7 +7,8 @@
 //
 
 #import "FlickRPicture.h"
-#define
+//TODO add define apiKey
+#define apiKey @"ade96f6829acf5cc181e4ee6483e92a3"
 @implementation FlickRPicture
 
 - (NSURL *)url
@@ -17,7 +18,8 @@
 }
 + (NSArray *)pictureAroundLocation:(FlickRLocation)location
 {
-    NSString * urlString = [NSString stringWithFormat:@""];
+    //TODO add url from flickR seach, and replace in string Location (struc) and your ApiKey
+    NSString * urlString = [NSString stringWithFormat:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=%@&lat=%f&lon=%f&radius=%i&format=json&nojsoncallback=1", apiKey, location.latitude, location.longitude, location.radius];
     NSURL * url = [NSURL URLWithString:urlString];
     NSData * data = [NSData dataWithContentsOfURL:url];
     
@@ -30,7 +32,7 @@
         FlickRPicture * picture = [[FlickRPicture alloc] init];
         picture.pictureID  = currentPicture[@"id"];
         picture.server  = currentPicture[@"server"];
-        picture.title  = currentPicture[@"titile"];
+        picture.title  = currentPicture[@"title"];
         picture.secret  = currentPicture[@"secret"];
         picture.farm  = currentPicture[@"farm"];
     }

@@ -32,6 +32,9 @@
 		9A58BA0518DA08B50008974D /* boobs2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A58B9FF18DA08B50008974D /* boobs2.jpg */; };
 		9A58BA0618DA08B50008974D /* boobs1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A58BA0018DA08B50008974D /* boobs1.jpg */; };
 		9A58BA0918F59C0C0008974D /* FlickRPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A58BA0818F59C0C0008974D /* FlickRPicture.m */; };
+		9A58BA0C19115CB50008974D /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A58BA0B19115CB50008974D /* City.m */; };
+		9A58BA0F19115EED0008974D /* City+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A58BA0E19115EED0008974D /* City+CRUD.m */; };
+		9A58BA1219116FA70008974D /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A58BA1119116FA70008974D /* CityViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,12 @@
 		9A58BA0018DA08B50008974D /* boobs1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boobs1.jpg; sourceTree = "<group>"; };
 		9A58BA0718F59C0C0008974D /* FlickRPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickRPicture.h; sourceTree = "<group>"; };
 		9A58BA0818F59C0C0008974D /* FlickRPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickRPicture.m; sourceTree = "<group>"; };
+		9A58BA0A19115CB50008974D /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		9A58BA0B19115CB50008974D /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		9A58BA0D19115EED0008974D /* City+CRUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "City+CRUD.h"; sourceTree = "<group>"; };
+		9A58BA0E19115EED0008974D /* City+CRUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "City+CRUD.m"; sourceTree = "<group>"; };
+		9A58BA1019116FA70008974D /* CityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
+		9A58BA1119116FA70008974D /* CityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +152,8 @@
 				9A58B9CF18D9F8270008974D /* AppDelegate.m */,
 				9A58B9D418D9F8270008974D /* Images.xcassets */,
 				9A58B9D118D9F8270008974D /* FlickrMap.xcdatamodeld */,
+				9A58BA0A19115CB50008974D /* City.h */,
+				9A58BA0B19115CB50008974D /* City.m */,
 				9A58B9C618D9F8270008974D /* Supporting Files */,
 				9A58B9F218D9F8EB0008974D /* Storyboard.storyboard */,
 				9A58B9F418DA00CE0008974D /* PictureViewController.h */,
@@ -151,6 +162,10 @@
 				9A58B9F818DA00F90008974D /* ReaderView.m */,
 				9A58BA0718F59C0C0008974D /* FlickRPicture.h */,
 				9A58BA0818F59C0C0008974D /* FlickRPicture.m */,
+				9A58BA0D19115EED0008974D /* City+CRUD.h */,
+				9A58BA0E19115EED0008974D /* City+CRUD.m */,
+				9A58BA1019116FA70008974D /* CityViewController.h */,
+				9A58BA1119116FA70008974D /* CityViewController.m */,
 			);
 			path = FlickrMap;
 			sourceTree = "<group>";
@@ -299,11 +314,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A58BA0F19115EED0008974D /* City+CRUD.m in Sources */,
 				9A58B9D018D9F8270008974D /* AppDelegate.m in Sources */,
 				9A58B9F618DA00CE0008974D /* PictureViewController.m in Sources */,
 				9A58B9D318D9F8270008974D /* FlickrMap.xcdatamodeld in Sources */,
 				9A58BA0918F59C0C0008974D /* FlickRPicture.m in Sources */,
 				9A58B9F918DA00F90008974D /* ReaderView.m in Sources */,
+				9A58BA1219116FA70008974D /* CityViewController.m in Sources */,
+				9A58BA0C19115CB50008974D /* City.m in Sources */,
 				9A58B9CC18D9F8270008974D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
